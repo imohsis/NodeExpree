@@ -4,7 +4,7 @@ const rest = require("express-nedb-rest");
 const cors = require("cors");
 
 const app = express();
-
+ 
 const datastore = new nedb({
     filename : "mycoffeapp.db",
     autoload: true
@@ -18,4 +18,4 @@ app.use(cors());
 
 app.use("/", restAPI);
 
-app.listen(3000);
+app.listen(5000);
